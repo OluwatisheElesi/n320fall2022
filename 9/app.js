@@ -3,15 +3,15 @@ let synthApp ={
 
 synth: new Tone.Synth().toDestination(),
 // this is the array that your are accessing 
-notes: ["C4", "D4", "E4", "F4" ,"E4"],
+notes: ["C4"],
 currentNote: 0,
 
-playSound() {
+playSound: function() {
     console.log(this);
-    this.synth.triggerAttackrealease(this.note[this.currentNote], "8n");
-    this.currentNote ++;
+    this.synth.triggerAttackRelease(this.notes[this.currentNote], "8n");
+    this.currentNote ;
 // we invoke play sound and wait and play half a second
-    setTimeout(this.playSound.bind(this), 500);
+    // setTimeout(this.playSound.bind(this), 400);
 }
 } 
 

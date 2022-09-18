@@ -63,6 +63,14 @@ svg
   rect:hover {
     fill: fuchsia;
   }
+/*   
+  @keyframes drop-left-from {
+    transform: translate(30px, 239px)
+    opacity: 1
+  to
+    transform: translate(30px, 330px)
+    opacity: 0;} */
+
  #rect {
     
     width: 350px;
@@ -71,18 +79,19 @@ svg
     position: relative;
     bottom: 240px;
     
+    
 
  }
 
+
 /* fade in properties */
  .fade-in-image {
+
  animation: fadeIn 5s; 
 /* ensure that other sites like chrome can do it tooo */
 -webkit-animation: fadeIn 5s;
--moz-animation: fadeIn 5s;
--o-animation: fadeIn 5s;
--ms-animation: fadeIn 5s;
-}
+
+animation: fadeOut 2s; }
 
 
 @keyframes fadeIn {
@@ -149,3 +158,14 @@ svg
     x:540px;
      y: 200px;
 } */
+
+#rect {
+    
+    width: 100px;
+    height: 40px;
+    /* background-color: blue; */
+}
+@keyframes fadeOut {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }

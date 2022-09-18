@@ -1,0 +1,151 @@
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+      width: 100%;
+      height: 600px;
+      background: #ffffff;
+
+   
+   
+   -webkit-font-smoothing: antialiased;
+  }
+  
+  body, input, button {
+   font-size: 20;
+   font-family: Georgia, 'Times New Roman', Times, serif;
+  }
+
+.words {
+ font-size: 44px;
+ width: 90px;
+ height: 60px;
+ /* background-color: aqua; */
+ padding: 1%;
+}
+
+#white {
+    width: 100%;
+    height: 67px;
+    background-color: white;   
+}
+
+#blue {
+ width: 100%;
+ height: 140px;
+ fill: blue;   
+/* }
+@-webkit-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+
+.fade-in {
+	opacity:0;  /* make things invisible upon start */
+	/* -webkit-animation:fadeIn ease-in 1;  call our keyframe named fadeIn, use animattion ease-in and repeat it only 1 time */} */
+/* #white {
+    width: 100%;
+    height: 60px;
+    background-color: white;   
+
+} */
+svg
+ curser, pointer{
+    width: 100%;
+}
+/* #purple {
+ width: 306px;
+ height: 200px;
+ background-color: purple;   
+  */
+  
+  rect:hover {
+    fill: fuchsia;
+  }
+ #rect {
+    
+    width: 350px;
+    height: 200px;
+    fill: #800080;
+    position: relative;
+    bottom: 240px;
+    
+
+ }
+
+/* fade in properties */
+ .fade-in-image {
+ animation: fadeIn 5s; 
+/* ensure that other sites like chrome can do it tooo */
+-webkit-animation: fadeIn 5s;
+-moz-animation: fadeIn 5s;
+-o-animation: fadeIn 5s;
+-ms-animation: fadeIn 5s;
+}
+
+
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+
+#rect:nth-child(1) {
+   
+}
+#rect:nth-child(2) {
+    x: 40;
+    y: 250;
+}
+
+#rect:nth-child(3) {
+    x: 450;
+    y: 0;
+}
+#rect:nth-child(4) {
+    x: 450;
+    y: 250;
+}
+#rect:nth-child(5) {
+    x: 860;
+    y: 0;
+   
+}
+#rect:nth-child(6) {
+    x: 860;
+    y: 250;
+}
+
+#darkb {
+    y:20px;
+     /* x:-170px; */
+}
+/* #P1r1 {
+    x:-300px;
+     y: -0px;
+}
+
+#P2r1 {
+    x:120px;
+     y: 200px;
+}
+
+#P3r1 {
+    x:540px;
+     y: 400px;
+}
+
+#P1r2 {
+    x:-300px;
+     y: 400px;
+}
+
+#P2r2 {
+    x:120px;
+     y: 200px;
+}
+
+#P3r2 {
+    x:540px;
+     y: 200px;
+} */

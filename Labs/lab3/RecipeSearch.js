@@ -13,7 +13,7 @@ export default class RecipeSearch extends React.Component {
     ]};
 
     render() {
-    //    this precreate a set of html before we drop it 
+       
             let recipesList = thisn.state.recipies.map((recipes) => {
                 return <div>{recipes}</div>;
             });

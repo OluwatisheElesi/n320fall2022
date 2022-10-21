@@ -18,5 +18,8 @@
   "homepage": "https://github.com/OluwatisheElesi/n320fall2022#readme",
   "devDependencies": {
     "sass": "^1.55.0"
+  },
+  "dependencies": {
+    "package-json": "^8.1.0"
   }
 }

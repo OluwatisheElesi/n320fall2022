@@ -1,0 +1,207 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before, 
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+  body {
+    background-color: rgb(31, 30, 30);
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+   }
+
+
+
+/* bottom of chess board */
+.board {
+    width: 880px;
+    height: 880px;
+    padding: 50px;
+      padding-right : 30px;
+    padding-top: 70px; 
+    padding-bottom: 50px; 
+    /* bottom: 190px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    left: 10px;
+    position: relative;
+    background-color: rgba(226, 193, 171, 0.768);
+    box-shadow: 0px 0px 8px 2px #060606;
+     border-radius: 20px;
+     margin-right: auto;
+     margin-left: auto;
+}
+/* grid features */
+#chessboard {
+    display: grid;
+    font-size: 0px; 
+    position: relative;
+    grid-template-columns: repeat(8, 100px);
+    grid-template-rows: repeat(8, 100px);
+    width: 800;
+    height: 800px;
+    
+    background-color: rgba(108, 108, 241, 0.558);
+
+}
+
+@media all {
+    .chessboard {
+        width: min(100vh, 1000vw);
+        height: min(100vh, 1000vw);
+        margin-right: auto;
+     margin-left: auto;
+    }
+}
+
+/* #chessboard > div{
+    width: 100px;
+    height: 100px;
+
+} */
+.squares {
+    width: 100px;
+    height: 100px;
+    margin-right: auto;
+    margin-left: auto;
+    /* float: left; */
+    /* background-color: rgb(8, 8, 57); */
+    text-align: center;
+    vertical-align: middle;
+    border:  1px solid rgb(216, 170, 139);
+    grid-template-columns: repeat(8, 100px);
+    grid-template-rows: repeat(8, 100px); 
+}
+
+#chessboard .squares:nth-of-type(even) {
+    
+    background-color: rgb(8, 8, 57);
+    margin-right: auto;
+    margin-left: auto;
+}
+#chessboard .squares:nth-of-type(odd) {
+    
+    background-color: rgba(226, 193, 171, 0.769);
+    margin-right: auto;
+    margin-left: auto;
+}
+
+    /* #chessboard .squares2:nth-of-type(even) {
+    
+        background-color: rgba(226, 193, 171, 0.769);
+        margin-right: auto;
+        margin-left: auto;
+    }
+    #chessboard .squares2:nth-of-type(odd) {
+        background-color: rgb(8, 8, 57);
+        
+        margin-right: auto;
+        margin-left: auto;} */
+
+/* .white-tile {
+    width: 100px;
+    height: 100px;
+    float: left;
+    background-color: rgba(145, 140, 137, 0.769);
+    text-align: center;
+    vertical-align: middle;
+    /* grid-template-columns: repeat(8, 100px);
+    grid-template-rows: repeat(8, 100px); }*/
+ 
+
+
+.numbers {
+    position:absolute;
+    display:flex;
+    left: -40px;
+    /* padding-left: 20px; */
+    padding-right: 20px;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: space-around;
+    height: 780px;
+    width: 50px;
+    font-size: 20px;
+    list-style: none;
+    
+}
+
+.letters {
+    position: absolute;
+    display:flex;
+    /* flex-direction: column-reverse; */
+    align-items: center;
+    justify-content: space-around;
+    height: 40px;
+    bottom: 790px;
+    width: 800px;
+    
+    padding-bottom: 40px;
+    padding-top: 20px;
+    font-size: 20px;
+    color: black;
+}
+
+/* chess  */
+.pieces {
+   width: 100px;
+   height: 100px;
+   /* background-color: aquamarine; */
+ position: relative;
+ justify-content: center;
+    display: flex;
+    align-items: center;
+    z-index: 5px; cursor: pointer;
+    transition: all 0.5s ease-in-out;
+   
+}
+
+ img:hover {
+    color: antiquewhite;
+     background: aquamarine;
+     z-index: 2;
+     transition: translate();
+}
+
+
+
+.piece .img {
+    width: 100px;
+    height: 100px;
+    position: relative;
+    z-index: 99px;
+}
+
+#turn {
+    max-width: 451px;
+    max-height: 30px;
+    width: 150%;
+    height: 150%;
+    position: relative;
+    float: right;
+    border-radius: 5px;
+    border: 1px solid rgb(0, 0, 0);
+    border-style: inset;
+    text-align: center;
+    padding: 5px 0 0 0;
+    
+    transition: .85s linear;
+    background-color: chartreuse;
+    box-shadow: 20px  #060606;
+    margin-bottom: 40px;
+    margin-top: 40px;
+}
+
+.turnhighlight {
+    background-color: #fdfdfd !important;
+    color: rgb(0, 0, 0);
+  }
